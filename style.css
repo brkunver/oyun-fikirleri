@@ -1,0 +1,49 @@
+
+body {
+  background-color: #142F43;
+  color: #FFAB4C;
+}
+
+.container {
+  text-align: center;
+}
+
+#baslik{
+  margin-top: 5%;
+}
+
+#buton1{
+  background-color: #f7890b;
+  font-family: 'Patrick Hand', cursive;
+
+}
+#buton1:hover{
+  background-color: #fd9a29;
+}
+#oyun{
+  font-size: 2rem;
+  color : #FF5F7E;
+  font-family: 'Patrick Hand', cursive;
+
+}
+
+#ekOzellik{
+  font-size: 2rem;
+  color : #FF5F7E;
+  
+}
+#baslik{
+  font-size: 3rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+}
