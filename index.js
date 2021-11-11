@@ -1,11 +1,12 @@
+// Html elementleri
 let oyunMetni = document.getElementById("oyun");
 let buton = document.getElementById("buton1");
 let ekOzellik = document.getElementById("ekOzellik");
 
-
+// rastgele mekan ve karakter secme fonksiyonlari
 let randomMekan = () => mekanlar[Math.floor(Math.random() * mekanlar.length)];
 let randomKarakter = () => karakterler[Math.floor(Math.random() * karakterler.length)];
-
+//verilen rakama gore rastgele bir ozellik secme fonksiyonu
 let randomOzellik = (sansOrani) => {
   let randomSayi = Math.floor(Math.random() * 100)
   if (randomSayi < sansOrani) {
@@ -15,9 +16,10 @@ let randomOzellik = (sansOrani) => {
     return "";
   }
 }
+// yazının belli kısmını pembe yapan kod stringleri
 let pembeBas = () => "<span style=\"color: #FFAB4C;\" > ";
 let pembeSon = () => "</span>";
-
+//butona basinca cagirilan fonksiyon. Uc tane taslak arasindan rastgele birini secip oyun yaratiyor.
 let yeniFikir = () => {
   let taslak = Math.floor(Math.random() * 3)
 
@@ -35,5 +37,5 @@ let yeniFikir = () => {
 
 
 }
-
+// butona onclick methodu atamasi
 buton.onclick = yeniFikir
